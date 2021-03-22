@@ -32,8 +32,6 @@ jobs:
         with:
           push: true
           tags: ${{ github.repository }}:latest
-          # when schedule, there is no event
-#          tags: ${{ github.repository_owner }}/${{ github.event.repository.name }}:latest
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
