@@ -2,7 +2,7 @@
 
 set -e
 
-sh -c "/init-ssh.sh $*"
+sh -c "/init-git-ssh.sh $*"
 
 SOURCE_REPO=$1
 DESTINATION_REPO=$2
