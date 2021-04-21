@@ -8,6 +8,9 @@ DESTINATION_REPO=$2
 echo "SOURCE=$SOURCE_REPO"
 echo "DESTINATION=$DESTINATION_REPO"
 
+echo before clone ~
+ls -als
+
 git clone --mirror "$SOURCE_REPO" && cd "$(basename "$SOURCE_REPO")"
 git remote set-url --push origin "$DESTINATION_REPO"
 
