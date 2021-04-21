@@ -1,7 +1,5 @@
 #!/bin/sh
 
-set -e
-
 echo entrypoint.sh ~
 ls -als
 
