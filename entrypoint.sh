@@ -1,7 +1,6 @@
 #!/bin/sh
 
-echo entrypoint.sh ~
-ls -als
+set -e
 
 sh -c "/init-git-ssh.sh $*"
 sh -c "/mirror.sh $*"
