@@ -2,6 +2,9 @@
 
 set -e
 
+echo mirror.sh
+echo "I am $(whoami)"
+
 SOURCE_REPO=$1
 DESTINATION_REPO=$2
 
